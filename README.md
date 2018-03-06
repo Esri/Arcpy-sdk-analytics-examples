@@ -1,5 +1,5 @@
 # ExampleDotNetAndPythonForAnalytics
-This repository shows how use a python script in a Add-in, using an example of Clustering-Based Analysis
+This repository shows how use a python script in a Add-in, using an example of Density-Based Clustering Analysis
 
 # Requirements
 1 ArcGIS PRO 2.1
