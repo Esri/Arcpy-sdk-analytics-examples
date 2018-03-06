@@ -14,7 +14,7 @@ Use the tool Density-Based Clustering from the toolbox Spatial Statistical for c
 The output will contain the information (Reachability distance/Reachability Order) That is required in the addin. The Add-in will 
 automatically detect the cluster.
 The Tool will find interactevely new clusters using the tolerance and threshold distance
-  
+ ![alt text](https://github.com/ArcGIS/ExampleDotNetAndPythonForAnalytics/blob/master/addin.gif) 
 
 # Licensing
 Copyright 2018 Esri
