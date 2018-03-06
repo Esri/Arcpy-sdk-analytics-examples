@@ -8,12 +8,12 @@ This repository shows how use a python script in a Add-in, using an example of C
 
 # How To Use
 This repo contains the source code of an Add-in for interactive analysis of the clustering-base algorithm OPTICS.
-It contains a pyt file that should be referenced manually in the fiel Dockpanel1ViewModel.cs according with location of the git repo.
-- Steps:
-  Use the tool Density-Based Clustering from the toolbox Spatial Statistical for creating cluster using the method OPTICS,
-  The output will contain the information (Reachability distance/Reachability Order) That is required in the addin. The Add-in will 
-  automatically detect the cluster.
-  The Tool will find interactevely new clusters using the tolerance and threshold distance
+It contains a pyt file that must be referenced manually in the file Dockpanel1ViewModel.cs according with git repo location.
+
+Use the tool Density-Based Clustering from the toolbox Spatial Statistical for creating cluster using the method OPTICS,
+The output will contain the information (Reachability distance/Reachability Order) That is required in the addin. The Add-in will 
+automatically detect the cluster.
+The Tool will find interactevely new clusters using the tolerance and threshold distance
   
 
 # Licensing
