@@ -1,5 +1,10 @@
 # ExampleDotNetAndPythonForAnalytics
-This repository shows how use  a python script in a Add-in to achieve a good interactivity, using an example of Clustering-Based Analysis
+This repository shows how use a python script in a Add-in, using an example of Clustering-Based Analysis
+
+# Requirements
+1 ArcGIS PRO 2.1
+2 Visual Studio 2017 C#
+
 
 # Licensing
 Copyright 2017 Esri
