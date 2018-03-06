@@ -1,0 +1,42 @@
+﻿<ArcGIS defaultAssembly="InteractiveAnalytics.dll" defaultNamespace="InteractiveAnalytics" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/ArcGIS/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{bdd5da99-7918-4d28-9d3d-6ed7f2e08825}" version="1.0" desktopVersion="2.1.10257">
+    <Name>InteractiveAnalytics</Name>
+    <Description>InteractiveAnalytics description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>carl8444</Author>
+    <Company>Acme</Company>
+    <Date>3/3/2018 3:43:42 PM, 2018</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="InteractiveAnalytics_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="InteractiveAnalytics_Tab1" caption="New Tab">
+          <group refID="InteractiveAnalytics_Group1"/>
+        </tab>-->
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="InteractiveAnalytics_Group1" caption="Analytics" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <button refID="InteractiveAnalytics_Dockpane1_ShowButton" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="InteractiveAnalytics_Dockpane1_ShowButton" caption="Cluster Analytics" className="Dockpane1_ShowButton" loadOnClick="true" smallImage="Images\GenericButtonPurple16.png" largeImage="Images\GenericButtonPurple32.png">
+          <tooltip heading="Show Dockpane">Show Cluster Tool<disabledText /></tooltip>
+        </button>
+      </controls>
+      <dockPanes>
+        <dockPane id="InteractiveAnalytics_Dockpane1" caption="" className="Dockpane1ViewModel" dock="group" dockWith="esri_core_contentsDockPane">
+          <content className="Dockpane1View" />
+        </dockPane>
+      </dockPanes>
+    </insertModule>
+  </modules>
+</ArcGIS>
