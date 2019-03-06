@@ -1,0 +1,42 @@
+﻿<ArcGIS defaultAssembly="Origin_Destination_Space_Time_Cube.dll" defaultNamespace="Origin_Destination_Space_Time_Cube" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/ArcGIS/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{0a3b3f65-21e3-46ba-8e3d-8b365352e86d}" version="1.0" desktopVersion="2.4.18972">
+    <Name>Origin_Destination_Space_Time_Cube</Name>
+    <Description>Origin_Destination_Space_Time_Cube description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>carl8444</Author>
+    <Company>Acme</Company>
+    <Date>3/5/2019 7:12:58 AM, 2019</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="Origin_Destination_Space_Time_Cube_Module" className="Module1" autoLoad="false" caption="Module1">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <!--<tab id="Origin_Destination_Space_Time_Cube_Tab1" caption="New Tab">
+          <group refID="Origin_Destination_Space_Time_Cube_Group1"/>
+        </tab>-->
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="Origin_Destination_Space_Time_Cube_Group1" caption="Origin-Destination Cube" appearsOnAddInTab="true">
+          <!-- host controls within groups -->
+          <button refID="Origin_Destination_Space_Time_Cube_Dockpane1_ShowButton" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="Origin_Destination_Space_Time_Cube_Dockpane1_ShowButton" caption="Origin-Destination Cube" className="Dockpane1_ShowButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple32.png">
+          <tooltip heading="Show Dockpane">Show Dockpane<disabledText /></tooltip>
+        </button>
+      </controls>
+      <dockPanes>
+        <dockPane id="Origin_Destination_Space_Time_Cube_Dockpane1" caption="Origin-Destination Cube" className="Dockpane1ViewModel" dock="group" dockWith="esri_core_contentsDockPane">
+          <content className="Dockpane1View" />
+        </dockPane>
+      </dockPanes>
+    </insertModule>
+  </modules>
+</ArcGIS>
