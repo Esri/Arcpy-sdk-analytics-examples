@@ -18,6 +18,22 @@ Mihael Ankerst, Markus M. Breunig, Hans-Peter Kriegel, Jörg Sander (1999). OPTI
 
  ![alt text](https://github.com/ArcGIS/ExampleDotNetAndPythonForAnalytics/blob/master/addin.gif) 
 
+## Example 2 - Managing Origin-Destination data in a Space-Time Cube 
+
+This example shows how use a python tool in a Add-in to include/selection origin - destination data.
+
+## Requirements
+0 Repository folder "Origin_Destination_Space_Time_Cube"
+1 ArcGIS PRO 2.3
+2 Visual Studio 2017 C#
+
+## How To Use
+This example "Origin_Destination_Space_Time_Cube"  contains the source code for an ArcGIS Pro Add-in.  The Add-in allows you to perform an interactive searching of destination of each bin in the Space-Time Cube. Additionally, a new python tool "Create Origin-Destination Cubes", allows to introduce the origin-destination in a cube.
+
+The Add-in is designed to work with the output of the Visualize Space-Time Cube 3D geoprocessing tool found in the Space Time Pattern Mining Tools toolbox.
+
+ ![alt text](https://github.com/ArcGIS/ExampleDotNetAndPythonForAnalytics/blob/master/OD_STC.PNG) 
+
 ## Licensing
 Copyright 2018 Esri
 
